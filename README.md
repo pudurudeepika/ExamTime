@@ -31,3 +31,15 @@ Technologies Used: HTML, CSS, JavaScript
 
 
 ![image](https://github.com/user-attachments/assets/7d13810e-1328-4b00-9268-e05afaf8ff8c)
+
+
+![image](https://github.com/user-attachments/assets/b294c894-7454-436a-85b5-657aac7fd7ac)
+
+
+![image](https://github.com/user-attachments/assets/51f997c0-9e78-4301-9c68-f52dbc6f4998)
+
+
+![image](https://github.com/user-attachments/assets/0e337074-c522-464b-ae7a-c0f3c5b99fcb)
+
+
+![image](https://github.com/user-attachments/assets/c89bd9b2-9826-4f9b-8e1a-649a1f714274)
