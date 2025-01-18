@@ -28,3 +28,6 @@ Dynamic Content Loading:
     Clicking on a subject opens a page with a list of five units, each unit containing downloadable PDFs.
 
 Technologies Used: HTML, CSS, JavaScript
+
+
+![image](https://github.com/user-attachments/assets/7d13810e-1328-4b00-9268-e05afaf8ff8c)
