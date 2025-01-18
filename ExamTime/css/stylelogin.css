@@ -1,0 +1,197 @@
+body { 
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: linear-gradient(135deg, #A7F3D0, #D4C6F4); */
+    /* background-image: linear-gradient(to top, #a18cd1, #fbc2eb ); */
+    background-image: linear-gradient(to top, #41a4c0 0%, #9cb4dc 100%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ /* #signupForm {
+    display: none;
+} */
+
+/*#loginForm {
+    display: block;
+}  */
+header {
+    width: 100%;
+    padding: 15px;
+    position:static;
+    text-align: center;
+    background-color: #1d2a42; 
+    color: #e1e1e1;
+}
+
+.forgotpassword {
+    display: block;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #041a31;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.forgotpassword:hover {
+    text-decoration: underline;
+}
+.reset-message {
+    color: green;
+    text-align: center;
+}
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;  
+    width: 30px;
+    height: 24px;
+    justify-content: space-between;
+}
+
+.menu-btn .line {
+    margin-top: 6px;
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff; /* White color for hamburger icon */
+    border-radius: 2px;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;  
+    background-color: #294c68; /* Lighter steel blue background */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-list li {
+    padding: 12px 0;
+}
+
+.menu-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-list li a:hover {
+    background-color: #0e41a7; /* Soft gold hover effect */
+}
+
+.title {
+    margin-top: 0px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    color: #ffefef; 
+}
+.fa {
+    margin-right: 5px;
+    font-size: 15px;
+}
+.nav {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.nav a {
+    color: #D3D3D3;
+    text-decoration: underline;
+    margin-left: 15px;
+    font-size: 17px;
+} 
+
+.nav a:hover {
+    color: #2d0da0; /* Gold hover effect */
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: -1;
+}
+
+#content {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: solid rgba(0, 0, 0, 0);
+    width: 400px;
+    height: 290px;
+    box-shadow: 2px 2px 12px 2px ;
+    border-radius: 8px;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    /* background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%); */
+}
+.container {
+    display:flex;
+    justify-content: space-around;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border: 2px;
+    border-color: black;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 25%;
+    padding: 7.5px;
+    background-color: rgb(31, 155, 24);
+    color: rgb(255, 255, 255);
+    border: solid rgba(135, 74, 74, 0);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: rgb(94, 243, 19);
+} 
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: rgb(9, 74, 179);
+    overflow: hidden;
+}
+
+.navbar a{
+    float: left;
+    display:flex;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    padding: 14px 16px;
+    text-decoration: underline;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENDER SENSITISATION</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .pdf-viewer {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+    </div>
+    <div id="menuBtn" class="menu-btn">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Menu Links (Initially Hidden) -->
+    <ul id="menuList" class="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="subjects.html">Subjects</a></li>
+        <li><a href="ds.html">Data Structures</a></li>
+        <!--<li><a href="videos.html">Videos</a></li>
+        <li><a href="practice_tests.html">Practice Tests</a></li> -->
+        <li><a href="login.html">Login</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <h2 class="section-title" style="color: white;">MACHINE LEARNING</h2>
+    </header>
+    <main>
+        <ul class="unit-list">
+            <li><a href="assets/pdfs/ml1.pdf" target="_blank" loadPDF('gs1.pdf')">Unit 1 -INTRODUCTION TO MACHINE LEARNING AND PREPARING TO MODEL.</a></li>
+            <li><a href="assets/pdfs/ml2.pdf" target="_blank" loadPDF('ai2.pdf')">Unit 2 - EVALUATION & BASICS OF FEATURE ENGINEERING.</a></li>
+            <li><a href="assets/pdfs/ml3.pdf" target="_blank" loadPDF('ai3.pdf')">Unit 3 - BAYSEIAN CONCEPT LEARNING & SUPERVISED LEARNING : CLASSIFICATION.</a></li>
+            <li><a href="assets/pdfs/ml4.pdf" target="_blank" loadPDF('gs4.pdf')">Unit 4 - SUPERVISED LEARNING : REGRESSION.</a></li>
+            <li><a href="assets/pdfs/ml5.pdf" target="_blank" loadPDF('gs5.pdf')">Unit 5 - UNSUPERVISED LEARNING.</a></li>
+
+        <!-- PDF viewer container -->
+        <div id="pdf-container">
+            <embed id="pdf-viewer" class="pdf-viewer" src="" type="application/pdf">
+        </div>
+    </main>
+
+    <object id="pdf-viewer" class="pdf-viewer" data="" type="application/pdf" width="100%" height="600px">
+        <p>Your browser does not support PDFs. <a href="#" id="pdf-download">Download the PDF</a> instead.</p>
+    </object>
+    
+    <script src="js/script.js"></script>
+    
+    <iframe id="pdf-viewer" width="100%" height="600px"></iframe>
+    
+    
+    
+</body>
+</html>

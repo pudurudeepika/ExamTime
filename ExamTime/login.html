@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="css/stylelogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+         #signupForm {
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="menuBtn" class="menu-btn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- Menu Links (Initially Hidden) -->
+        <ul id="menuList" class="menu-list"> 
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="subjects.html">Subjects</a></li>
+            <li><a href="ds.html">Data Structures</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        
+        <div class="nav">
+            <a href="index.html"><i class="fa fa-home"></i>Home</a>
+            <a href="about.html"><i class="fa-solid fa-address-card"></i> About</a>
+        </div>
+        <h1 class="title">Exam Time</h1>
+    </header>
+    <div class="navbar">
+        <a href="#" onclick="showLoginForm()">Login</a>
+        <a href="signup.html" onclick="showSignupForm()">Signup</a>
+    </div>
+
+
+    <div id="content">
+        <div id="loginForm" action="/loginForm" method="post">
+            <form id="loginForm" action="/loginForm" method="post">
+                <h2 style="color: rgb(1, 1, 1); font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Login</h2>
+                <i class="fa fa-user"></i><input type="text" placeholder="Username" name="loginusername" id="username" required><br>
+                <i class="fa fa-lock"></i><input type="text" placeholder="Password" name="loginpassword" id="password" required>
+                <button type="submit">Login</button>
+                <a href="forgotpassword.html" class="forgotpassword" onclick="forgotPassword()">Forgot Password?</a>
+            </form>    
+        </div>
+    </div>
+
+
+    <!-- <span style="color: white; position: absolute; top: 30%; left: 50%; transform: translate(-50%,-50%); text-align: center;">{{err}}</span>
+    <span style="color:green;">{{res}}</span> -->
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

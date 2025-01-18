@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="css/stylelogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        #loginForm {
+       display: none;
+       }
+       #content {
+            position:fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: 50px;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: rgb(0, 0, 0);
+            border: solid rgba(0, 0, 0, 0);
+            width: 400px;
+            height: 330px;
+            box-shadow: 2px 2px 12px 2px ;
+            border-radius: 8px;
+            background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+            /* background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%); */
+        }
+   </style>
+</head>
+<body>
+    <header>
+        <div id="menuBtn" class="menu-btn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- Menu Links (Initially Hidden) -->
+        <ul id="menuList" class="menu-list"> 
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="subjects.html">Subjects</a></li>
+            <li><a href="ds.html">Data Structures</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        
+        <div class="nav">
+            <a href="index.html"><i class="fa fa-home"></i>Home</a>
+            <a href="about.html"><i class="fa-solid fa-address-card"></i> About</a>
+        </div>
+        <h1 class="title">Exam Time</h1>
+    </header>
+    <div class="navbar">
+        <a href="login.html" onclick="showLoginForm()">Login</a>
+        <a href="signup.html" onclick="showSignupForm()">Signup</a>
+    </div>
+
+
+    <div id="content">
+        <div id="signupForm" action="/signupForm" method="post">
+            <form id="signupForm" action="/signupForm" method="post">
+                <h2 style="color: rgb(0, 0, 6); font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Signup</h2>
+                <i class="fa fa-envelope"></i><input type="email" placeholder="Enter your email address" name="email" id="email" required>
+                <br><i class="fa fa-user"></i><input type="text" placeholder="Username" name="signupusername" id="username" required>
+                <br><i class="fa fa-lock"></i><input type="text" placeholder="Password" name="signuppassword" id="password" required>
+                <button type="submit">Signup</button>
+                <a href="login.html" class="forgotpassword" onclick="showloginForm()">login?</a>
+
+            </form>    
+        </div>
+    </div>
+
+
+    <!-- <span style="color: white; position: absolute; top: 30%; left: 50%; transform: translate(-50%,-50%); text-align: center;">{{err}}</span>
+    <span style="color:green;">{{res}}</span> -->
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
